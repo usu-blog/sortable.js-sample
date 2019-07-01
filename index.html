@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="box d-flex justify-content-between">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body>
+  <header>Header</header>
+  <div class="box d-flex justify-content-between">
+    <div>
+      <div>
+        <input type="checkbox" id="check1" value="option1" /> <label class="card-title" for="check1">List1</label>
+      </div>
       <ul id="List1" class="list-group">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-        <li class="list-group-item">Porta ac consectetur ac</li>
-        <li class="list-group-item">Vestibulum at eros</li>
-      </ul>
-      <ul id="List2" class="list-group">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-        <li class="list-group-item">Porta ac consectetur ac</li>
-        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item"><input type="checkbox"> Cras justo odio</li>
+        <li class="list-group-item"><input type="checkbox"> Dapibus ac facilisis in</li>
+        <li class="list-group-item"><input type="checkbox"> Morbi leo risus</li>
+        <li class="list-group-item"><input type="checkbox"> Porta ac consectetur ac</li>
+        <li class="list-group-item"><input type="checkbox"> Vestibulum at eros</li>
       </ul>
     </div>
-    <script src="http://SortableJS.github.io/Sortable/Sortable.js"></script>
-    <script src="script.js"></script>
-  </body>
+    <div>
+      <div>
+        <input type="checkbox" id="check2" value="option1" /> <label class="card-title" for="check2">List2</label>
+      </div>
+      <ul id="List2" class="list-group">
+        <li class="list-group-item"><input type="checkbox"> Cras justo odio</li>
+        <li class="list-group-item"><input type="checkbox"> Dapibus ac facilisis in</li>
+        <li class="list-group-item"><input type="checkbox"> Morbi leo risus</li>
+        <li class="list-group-item"><input type="checkbox"> Porta ac consectetur ac</li>
+        <li class="list-group-item"><input type="checkbox"> Vestibulum at eros</li>
+      </ul>
+    </div>
+    <div>
+      <div>
+        <p>アウトプット</p>
+      </div>
+      <ul id="Output" class="list-group">
+        <li class="list-group-item">Sample</li>
+      </ul>
+    </div>
+  </div>
+  <footer>Footer</footer>
+  <script src="http://SortableJS.github.io/Sortable/Sortable.js"></script>
+  <script src="./js/common.js"></script>
+</body>
+
 </html>
